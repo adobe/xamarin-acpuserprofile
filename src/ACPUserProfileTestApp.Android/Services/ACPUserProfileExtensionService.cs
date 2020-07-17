@@ -99,6 +99,7 @@ namespace ACPUserProfileTestApp.Droid
             attributes.Add("age");
             ACPUserProfile.GetUserAttributes(attributes, new AdobeCallback());
             latch.Wait(1000);
+            latch.Dispose();
             stringOutput.SetResult(callbackString);
             return stringOutput;
         }

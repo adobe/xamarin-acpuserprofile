@@ -118,6 +118,7 @@ namespace ACPUserProfileTestApp.iOS
             string[] attributes = new string[] { "firstName", "lastName", "vehicle", "color", "insured", "age" };
             ACPUserProfile.GetUserAttributes(attributes, callback);
             latch.Wait(1000);
+            latch.Dispose();
             stringOutput.SetResult(callbackString);
             return stringOutput;
         }
