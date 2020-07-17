@@ -15,6 +15,10 @@ using System.Threading.Tasks;
 using Android.Runtime;
 using Com.Adobe.Marketing.Mobile;
 using System.Threading;
+using Java.Util;
+using Android.Telecom;
+using Xamarin.Essentials;
+using System.Linq;
 
 namespace ACPUserProfileTestApp.Droid
 {
@@ -22,7 +26,6 @@ namespace ACPUserProfileTestApp.Droid
     {
         TaskCompletionSource<string> stringOutput;
         private static CountdownEvent latch = null;
-        private string sessionUrl = "";
         private static string callbackString = "";
 
         public ACPUserProfileExtensionService()
@@ -83,6 +86,7 @@ namespace ACPUserProfileTestApp.Droid
 
         public TaskCompletionSource<string> GetUserAttributes()
         {
+            latch = new CountdownEvent(1);
             stringOutput = new TaskCompletionSource<string>();
             var attributes = new List<string>();
             attributes.Add("firstName");
@@ -90,19 +94,25 @@ namespace ACPUserProfileTestApp.Droid
             attributes.Add("vehicle");
             attributes.Add("color");
             attributes.Add("pointsOnRecord");
-            ACPUserProfile.GetUserAttributes(attributes, new StringCallback());
-            stringOutput.SetResult("completed");
+            ACPUserProfile.GetUserAttributes(attributes, new MapCallback());
+            latch.Wait(1000);
+            stringOutput.SetResult(callbackString);
             return stringOutput;
         }
 
         // callbacks
-        class StringCallback : Java.Lang.Object, IAdobeCallback
+        class MapCallback : Java.Lang.Object, IAdobeCallback
         {
-            public void Call(Java.Lang.Object stringContent)
+            public void Call(Java.Lang.Object retrievedAttributes)
             {
-                if (stringContent != null)
+                callbackString = "";
+                if (retrievedAttributes != null)
                 {
-                    callbackString = stringContent.ToString();
+                    var attributesDictionary = new Android.Runtime.JavaDictionary<string, object>(retrievedAttributes.Handle, Android.Runtime.JniHandleOwnership.DoNotRegister);
+                    foreach (KeyValuePair<string, object> pair in attributesDictionary)
+                    {
+                        callbackString = callbackString + "[ " + pair.Key + ": " + pair.Value + " ]";
+                    }
                 }
                 else
                 {

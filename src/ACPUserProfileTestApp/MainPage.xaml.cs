@@ -71,7 +71,9 @@ namespace ACPUserProfileTestApp
         {
             if (result != null)
             {
-                Console.WriteLine(apiName + ": " + result);
+                string output = apiName + ": " + result;
+                Console.WriteLine(output);
+                TextOutput.Text = output;
             }
         }
     }
