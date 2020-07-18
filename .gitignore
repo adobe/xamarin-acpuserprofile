@@ -340,4 +340,4 @@ src/Adobe.ACPUserProfile.Android/Jars/AboutJars.txt
 src/ACPUserProfileTestApp.Android/Additions/AboutAdditions.txt
 src/ACPUserProfileTestApp.Android/Resources/AboutResources.txt
 src/ACPUserProfileAndroidUnitTests/Assets/AboutAssets.txt
-src/AACPUserProfileAndroidUnitTests/Resources/AboutResources.txt
+src/ACPUserProfileAndroidUnitTests/Resources/AboutResources.txt
