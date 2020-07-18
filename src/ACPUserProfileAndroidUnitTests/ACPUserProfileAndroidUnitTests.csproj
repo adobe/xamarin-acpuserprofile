@@ -62,7 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
     <None Include="packages.config" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
@@ -89,13 +88,13 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\AboutAssets.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Adobe.ACPUserProfile.Android\Adobe.ACPUserProfile.Android.csproj">
       <Project>{E2D66A85-BB8D-46A3-8075-892E64FE8A08}</Project>
       <Name>Adobe.ACPUserProfile.Android</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
