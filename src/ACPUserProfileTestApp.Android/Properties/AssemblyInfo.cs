@@ -1,4 +1,15 @@
-﻿using System.Reflection;
+﻿/*
+Copyright 2020 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it. If you have received this file from a source other than Adobe,
+then your use, modification, or distribution of it requires the prior
+written permission of Adobe. (See LICENSE-MIT for details)
+*/
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Android.App;
@@ -9,9 +20,9 @@ using Android.App;
 [assembly: AssemblyTitle("ACPUserProfileTestApp.Android")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Adobe Inc.")]
 [assembly: AssemblyProduct("ACPUserProfileTestApp.Android")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright 2020 Adobe All Rights Reserved. NOTICE: Adobe permits you to use, modify, and distribute this file in accordance with the terms of the Adobe license agreement accompanying it.If you have received this file from a source other than Adobe, then your use, modification, or distribution of it requires the prior written permission of Adobe. This file has been modified from its original form.The original license can be viewed in the NOTICES.txt file.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
