@@ -196,7 +196,7 @@ private void handleCallback(NSDictionary content, NSError error)
 {
   if (error != null)
   {
-    Console.WriteLine(GetUserAttributes error:" + error.DebugDescription");
+    Console.WriteLine("GetUserAttributes error:" + error.DebugDescription);
   }
   else if (content == null)
   {
