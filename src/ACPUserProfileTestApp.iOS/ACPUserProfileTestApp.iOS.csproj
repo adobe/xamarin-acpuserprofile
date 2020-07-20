@@ -132,7 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ACPUserProfileTestApp\ACPUserProfileTestApp.csproj">
-      <Project>{DC0B1676-159C-43C2-9704-AF1B765475C5}</Project>
+      <Project>{DDF7A8C1-13FA-496D-A9D7-07ADD587D21B}</Project>
       <Name>ACPUserProfileTestApp</Name>
     </ProjectReference>
     <ProjectReference Include="..\Adobe.ACPUserProfile.iOS\Adobe.ACPUserProfile.iOS.csproj">

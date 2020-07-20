@@ -51,6 +51,6 @@ namespace Com.Adobe.Marketing.Mobile
         // +(void)getUserAttributes:(NSArray<NSString *> * _Nullable)attributNames withCompletionHandler:(void (^ _Nonnull)(NSDictionary * _Nullable, NSError * _Nullable))completionHandler;
         [Static]
         [Export("getUserAttributes:withCompletionHandler:")]
-        void GetUserAttributes([NullAllowed] string[] attributNames, Action<NSDictionary, NSError> completionHandler);
+        void GetUserAttributes([NullAllowed] string[] attributeNames, Action<NSDictionary, NSError> completionHandler);
     }
 }
