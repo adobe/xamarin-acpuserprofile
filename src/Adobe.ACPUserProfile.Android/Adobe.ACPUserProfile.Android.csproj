@@ -30,6 +30,7 @@
     <Description>Adobe Experience Platform - User Profile plugin for Xamarin Android.</Description>
     <ReleaseVersion>0.0.1</ReleaseVersion>
     <SynchReleaseVersion>false</SynchReleaseVersion>
+    <PackageLicenseUrl>https://github.com/adobe/xamarin-acpuserprofile/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
