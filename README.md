@@ -41,7 +41,7 @@ make release
 The created NuGet packages can be found in the `bin` directory. This directory can be added as a local nuget source and packages within the directory can be added to a Xamarin project following the steps in the "Package Manager Installation" above.
 ## Usage
 
-The ACPUserProfile binding can be opened by loading the `ACPUserProfile.sln` with Visual Studio. The following targets are available in the solution:
+The ACPUserProfile binding can be opened by loading the `ACPUserProfileBinding.sln` with Visual Studio. The following targets are available in the solution:
 
 - Adobe.ACPUserProfile.iOS - The ACPUserProfile iOS bindings.
 - Adobe.ACPUserProfile.Android - The ACPUserProfile Android binding.
