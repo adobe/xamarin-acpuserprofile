@@ -204,8 +204,7 @@ private void handleCallback(NSDictionary content, NSError error)
   }
   else
   {
-    var attributesDictionary = (NSDictionary)content;
-    foreach (KeyValuePair<NSObject, NSObject> pair in attributesDictionary)
+    foreach (KeyValuePair<NSObject, NSObject> pair in content)
     {
       Console.WriteLine("[ " + pair.Key + " : " + pair.Value + " ]");
     }

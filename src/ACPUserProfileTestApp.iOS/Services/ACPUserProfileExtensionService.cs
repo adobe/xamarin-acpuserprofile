@@ -103,8 +103,7 @@ namespace ACPUserProfileTestApp.iOS
                  }
                  else
                  {
-                     var attributesDictionary = (NSDictionary)content;
-                     foreach (KeyValuePair<NSObject, NSObject> pair in attributesDictionary)
+                     foreach (KeyValuePair<NSObject, NSObject> pair in content)
                      {
                          callbackString = callbackString + "[ " + pair.Key + ": " + pair.Value + " ]";
                      }
