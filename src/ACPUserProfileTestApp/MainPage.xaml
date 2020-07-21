@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2020 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it. If you have received this file from a source other than Adobe,
+then your use, modification, or distribution of it requires the prior
+written permission of Adobe. (See LICENSE-MIT for details)
+-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ACPUserProfileTestApp.MainPage">
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="20,35,20,20">
+                <!--ACPUserProfile methods-->
+                <Label Text="ACPUserProfile" />
+                <Button Text="ACPUserProfile Extension Version" BackgroundColor="LightGray" Clicked="OnExtensionVersionButtonClicked"/>
+                <Button Text="Update User Attribute" BackgroundColor="LightGray" Clicked="OnUpdateUserAttributeButtonClicked"/>
+                <Button Text="Update User Attributes" BackgroundColor="LightGray" Clicked="OnUpdateUserAttributesButtonClicked"/>
+                <Button Text="Remove User Attribute" BackgroundColor="LightGray" Clicked="OnRemoveUserAttributeButtonClicked"/>
+                <Button Text="Remove User Attributes" BackgroundColor="LightGray" Clicked="OnRemoveUserAttributesButtonClicked"/>
+                <Button Text="Get User Attributes" BackgroundColor="LightGray" Clicked="OnGetUserAttributesButtonClicked"/>
+                <Label x:Name="TextOutput" Text="Retrieved Attributes:"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
