@@ -14,7 +14,7 @@ namespace ACPUserProfileAndroidUnitTests
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.2.8.165")]
 	public partial class Resource
 	{
 		
@@ -25,6 +25,7 @@ namespace ACPUserProfileAndroidUnitTests
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Android.NUnitLite.Resource.Id.CreditsButton = global::ACPUserProfileAndroidUnitTests.Resource.Id.CreditsButton;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::ACPUserProfileAndroidUnitTests.Resource.Id.OptionHostName;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::ACPUserProfileAndroidUnitTests.Resource.Id.OptionPort;
 			global::Xamarin.Android.NUnitLite.Resource.Id.OptionRemoteServer = global::ACPUserProfileAndroidUnitTests.Resource.Id.OptionRemoteServer;
@@ -41,10 +42,12 @@ namespace ACPUserProfileAndroidUnitTests
 			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsPassed = global::ACPUserProfileAndroidUnitTests.Resource.Id.ResultsPassed;
 			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsResult = global::ACPUserProfileAndroidUnitTests.Resource.Id.ResultsResult;
 			global::Xamarin.Android.NUnitLite.Resource.Id.ResultStackTrace = global::ACPUserProfileAndroidUnitTests.Resource.Id.ResultStackTrace;
+			global::Xamarin.Android.NUnitLite.Resource.Id.RunEverythingButton = global::ACPUserProfileAndroidUnitTests.Resource.Id.RunEverythingButton;
 			global::Xamarin.Android.NUnitLite.Resource.Id.RunTestsButton = global::ACPUserProfileAndroidUnitTests.Resource.Id.RunTestsButton;
 			global::Xamarin.Android.NUnitLite.Resource.Id.TestSuiteListView = global::ACPUserProfileAndroidUnitTests.Resource.Id.TestSuiteListView;
 			global::Xamarin.Android.NUnitLite.Resource.Layout.options = global::ACPUserProfileAndroidUnitTests.Resource.Layout.options;
 			global::Xamarin.Android.NUnitLite.Resource.Layout.results = global::ACPUserProfileAndroidUnitTests.Resource.Layout.results;
+			global::Xamarin.Android.NUnitLite.Resource.Layout.Runner = global::ACPUserProfileAndroidUnitTests.Resource.Layout.Runner;
 			global::Xamarin.Android.NUnitLite.Resource.Layout.test_result = global::ACPUserProfileAndroidUnitTests.Resource.Layout.test_result;
 			global::Xamarin.Android.NUnitLite.Resource.Layout.test_suite = global::ACPUserProfileAndroidUnitTests.Resource.Layout.test_suite;
 		}
@@ -65,6 +68,9 @@ namespace ACPUserProfileAndroidUnitTests
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000d
+			public const int CreditsButton = 2131034125;
+			
 			// aapt resource value: 0x7f050001
 			public const int OptionHostName = 2131034113;
 			
@@ -74,23 +80,23 @@ namespace ACPUserProfileAndroidUnitTests
 			// aapt resource value: 0x7f050000
 			public const int OptionRemoteServer = 2131034112;
 			
-			// aapt resource value: 0x7f050010
-			public const int OptionsButton = 2131034128;
-			
-			// aapt resource value: 0x7f05000b
-			public const int ResultFullName = 2131034123;
-			
-			// aapt resource value: 0x7f05000d
-			public const int ResultMessage = 2131034125;
-			
 			// aapt resource value: 0x7f05000c
-			public const int ResultResultState = 2131034124;
+			public const int OptionsButton = 2131034124;
 			
-			// aapt resource value: 0x7f05000a
-			public const int ResultRunSingleMethodTest = 2131034122;
+			// aapt resource value: 0x7f05000f
+			public const int ResultFullName = 2131034127;
+			
+			// aapt resource value: 0x7f050011
+			public const int ResultMessage = 2131034129;
+			
+			// aapt resource value: 0x7f050010
+			public const int ResultResultState = 2131034128;
 			
 			// aapt resource value: 0x7f05000e
-			public const int ResultStackTrace = 2131034126;
+			public const int ResultRunSingleMethodTest = 2131034126;
+			
+			// aapt resource value: 0x7f050012
+			public const int ResultStackTrace = 2131034130;
 			
 			// aapt resource value: 0x7f050006
 			public const int ResultsFailed = 2131034118;
@@ -113,11 +119,14 @@ namespace ACPUserProfileAndroidUnitTests
 			// aapt resource value: 0x7f050004
 			public const int ResultsResult = 2131034116;
 			
-			// aapt resource value: 0x7f05000f
-			public const int RunTestsButton = 2131034127;
+			// aapt resource value: 0x7f05000b
+			public const int RunEverythingButton = 2131034123;
 			
-			// aapt resource value: 0x7f050011
-			public const int TestSuiteListView = 2131034129;
+			// aapt resource value: 0x7f050013
+			public const int RunTestsButton = 2131034131;
+			
+			// aapt resource value: 0x7f05000a
+			public const int TestSuiteListView = 2131034122;
 			
 			static Id()
 			{
@@ -139,10 +148,13 @@ namespace ACPUserProfileAndroidUnitTests
 			public const int results = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int test_result = 2130903042;
+			public const int Runner = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int test_suite = 2130903043;
+			public const int test_result = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int test_suite = 2130903044;
 			
 			static Layout()
 			{

@@ -62,7 +62,7 @@ namespace ACPUserProfileiOSUnitTests
         public void GetACPUserProfileExtensionVersion_Returns_CorrectVersion()
         {
             // verify
-            Assert.That(ACPUserProfile.ExtensionVersion(), Is.EqualTo("2.1.0"));
+            Assert.That(ACPUserProfile.ExtensionVersion(), Is.EqualTo("2.2.0"));
         }
 
         [Test]

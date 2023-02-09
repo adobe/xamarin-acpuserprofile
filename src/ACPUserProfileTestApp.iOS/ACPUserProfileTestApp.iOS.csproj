@@ -127,7 +127,7 @@
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.967" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Adobe.ACPCore.iOS">
-      <Version>0.0.1</Version>
+      <Version>1.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -136,7 +136,6 @@
       <Name>ACPUserProfileTestApp</Name>
     </ProjectReference>
     <ProjectReference Include="..\Adobe.ACPUserProfile.iOS\Adobe.ACPUserProfile.iOS.csproj">
-      <Project>{2CBDDD99-EBD7-4C7E-B8CB-5BE743502289}</Project>
       <Name>Adobe.ACPUserProfile.iOS</Name>
     </ProjectReference>
   </ItemGroup>
