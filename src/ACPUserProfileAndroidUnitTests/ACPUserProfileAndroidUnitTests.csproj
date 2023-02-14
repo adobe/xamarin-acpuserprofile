@@ -51,7 +51,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Android.NUnitLite" />
     <Reference Include="Adobe.ACPCore.Android">
-      <HintPath>..\packages\Adobe.ACPCore.Android.0.0.1\lib\monoandroid90\Adobe.ACPCore.Android.dll</HintPath>
+      <HintPath>..\packages\Adobe.ACPCore.Android.1.1.0\lib\monoandroid90\Adobe.ACPCore.Android.dll</HintPath>
     </Reference>
     <Reference Include="Java.Interop" />
   </ItemGroup>
@@ -62,8 +62,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\Icon.png">

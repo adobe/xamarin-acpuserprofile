@@ -87,8 +87,9 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="MonoTouch.NUnitLite" />
     <Reference Include="Adobe.ACPCore.iOS">
-      <HintPath>..\packages\Adobe.ACPCore.iOS.0.0.1\lib\xamarinios10\Adobe.ACPCore.iOS.dll</HintPath>
+      <HintPath>..\packages\Adobe.ACPCore.iOS.1.0.1\lib\xamarinios10\Adobe.ACPCore.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing.Common.dll" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
